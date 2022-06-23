@@ -15,6 +15,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/posts" element={<BlogListPage />} />
         <Route path="/post/:slug" element={<PostPage />} />
+        <Route path="*" element={<Home />} />
+
       </Routes>
       <Footer />
     </Router>
